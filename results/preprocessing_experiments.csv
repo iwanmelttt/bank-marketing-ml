@@ -1,0 +1,23 @@
+experiment,model,variant,roc_auc,pr_auc,f1,recall,precision,pr_auc_std,fit_seconds
+Unknown handling,LR,keep 'unknown' as category,0.7899,0.444,0.4488,0.6281,0.3492,0.0116,2.6
+Unknown handling,LR,mode imputation,0.7902,0.4441,0.4481,0.626,0.349,0.0113,1.0
+Unknown handling,HGB,keep 'unknown' as category,0.7906,0.4599,0.4653,0.6138,0.3748,0.0183,2.0
+Unknown handling,HGB,mode imputation,0.7913,0.4607,0.4642,0.6147,0.3731,0.0176,2.0
+Imbalance,LR,none,0.7892,0.4494,0.3442,0.2323,0.6658,0.0135,0.9
+Imbalance,LR,class weights,0.7899,0.444,0.4488,0.6281,0.3492,0.0116,1.0
+Imbalance,LR,SMOTE,0.7869,0.4401,0.4385,0.6271,0.3371,0.0132,1.4
+Imbalance,LR,random undersampling,0.7878,0.4415,0.4417,0.6276,0.3408,0.0121,0.8
+Imbalance,HGB,none,0.7941,0.4619,0.3586,0.2479,0.6492,0.0173,1.9
+Imbalance,HGB,class weights,0.7906,0.4599,0.4653,0.6138,0.3748,0.0183,2.0
+Imbalance,HGB,SMOTE,0.7896,0.4487,0.4039,0.3126,0.5714,0.0134,5.9
+Imbalance,HGB,random undersampling,0.7828,0.4307,0.4321,0.6327,0.3281,0.0173,1.6
+Scaling,LR,standard scaling,0.7899,0.444,0.4488,0.6281,0.3492,0.0116,0.9
+Scaling,LR,no scaling,0.7873,0.4274,0.4392,0.6319,0.3366,0.0113,18.1
+Feature selection,LR,correlation filter |rho|>0.90,0.7899,0.444,0.4488,0.6281,0.3492,0.0116,0.9
+Feature selection,LR,all features,0.7899,0.446,0.4504,0.6225,0.3529,0.013,1.1
+Feature selection,HGB,correlation filter |rho|>0.90,0.7906,0.4599,0.4653,0.6138,0.3748,0.0183,2.0
+Feature selection,HGB,all features,0.7999,0.4655,0.4731,0.6227,0.3814,0.0154,2.1
+PCA,LR,no PCA,0.7899,0.444,0.4488,0.6281,0.3492,0.0116,0.9
+PCA,LR,PCA (95% variance),0.7866,0.4283,0.4286,0.6295,0.3249,0.0091,0.8
+PCA,HGB,no PCA,0.7906,0.4599,0.4653,0.6138,0.3748,0.0183,2.1
+PCA,HGB,PCA (95% variance),0.7869,0.4388,0.4576,0.613,0.3652,0.0101,6.8
