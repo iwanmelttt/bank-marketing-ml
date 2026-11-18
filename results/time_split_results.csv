@@ -1,0 +1,7 @@
+model,split,roc_auc,pr_auc,capture_top20
+Random Forest,time-based,0.7207400922020968,0.508219285233438,0.35092556124458446
+Random Forest,random (main results),0.8112,0.4818,0.6573
+Gradient Boosting,time-based,0.6471859912333884,0.4318537149714486,0.32768806616778257
+Gradient Boosting,random (main results),0.8125,0.4862,0.6627
+Soft Voting,time-based,0.6829063864942847,0.46614484707525256,0.33950374163056324
+Soft Voting,random (main results),0.8131,0.4869,0.6606
